@@ -1,0 +1,9 @@
+linters:
+  ColorVariable:
+    enabled: false # don't require color variables
+  HexNotation:
+    style: uppercase # hex codes should be uppercase
+  PlaceholderInExtend:
+    enabled: false # don't warn about extending a class
+  SelectorFormat:
+    convention: hyphenated_BEM # use hypenated BEM class syntax, eg: block__element--modifier

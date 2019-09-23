@@ -1,0 +1,26 @@
+{
+  "name": "web-starter-kit",
+  "version": "1.0.0",
+  "description": "Barebones dev server with SASS compiling support (apprentice ed)",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/8thlight/apprentice-web-starter-kit.git"
+  },
+  "author": "8th Light",
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "~4.0.2"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "gulp-autoprefixer": "^7.0.0",
+    "gulp-cache-bust": "^1.4.1",
+    "gulp-sass": "^4.0.2",
+    "stylelint-config-standard": "^18.3.0"
+  }
+}
