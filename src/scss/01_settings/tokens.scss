@@ -2,17 +2,17 @@
 
 $color-background: #FFF;
 
-$color-primary: #27A8E0;
+$color-primary: #FA8D62;
 $color-primary-hover: darken($color-primary, 10%);
-$color-secondary: #626E7A;
+$color-secondary: #FFF;
 $color-secondary-hover: darken($color-secondary, 10%);
 $color-white: #FFF;
-$color-black: #070707;
+$color-black: #2B2B2B;
 $color-black-hover: darken($color-black, 10%);
 $color-black-secondary: rgba($color-black, 0.5);
 $color-accent: #CCC;
 $color-accent-hover: darken($color-accent, 10%);
-$color-success: #58966B;
+$color-success: #B2DBD5;
 $color-success-hover: darken($color-success, 10%);
 $color-error: #C81905;
 $color-error-hover: darken($color-error, 10%);
@@ -28,7 +28,7 @@ $color-mask: rgba($color-black, 0.3);
 
 // Fonts
 
-$font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+$font-family: unit-rounded,'Open Sans','Helvetica Neue',Arial,sans-serif;
 $font-family-monospace: monospace;
 $font-weight-light: 300;
 $font-weight-regular: 400;

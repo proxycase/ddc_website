@@ -1,0 +1,21 @@
+html {
+  padding: $spacing-medium;
+}
+
+.o-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.o-column-50 {
+  padding: $spacing-medium;
+  max-width: rem(600px);
+  flex-grow: 1;
+}
+
+.o-column-33 {
+  display: block;
+  padding: $spacing-medium;
+  flex-grow: 1;
+}
