@@ -6,6 +6,10 @@
 
     <link rel="stylesheet" href="https://use.typekit.net/lhu3eel.css">
     <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="dist/css/datepicker.min.css">
+    <script src="dist/js/datepicker.min.js"></script>
+    <!-- Include English language -->
+    <script src="dist/js/i18n/datepicker.en.js"></script>
     
   </head>
   <body>
@@ -15,10 +19,17 @@
         <img src="assets/Logo@2x.png" alt="bork co." >
       </div>
       <div class="o-navigation">
+        <!-- Dropdown Icon -->
+        <div class="menu-icon">
+          <img src="assets/MenuIcon2x.png" alt="Menu" >
+        </div>
+        <!-- Nav Items -->
         <ul class="o-nav__items">
-          <li><a href="#">About</a></li>
-          <li><a href="#">Sign In</a></li>
-          <li><a href="#">Sign Up</a></li>
+          <li><a href="#">Locations</a></li>
+          <li><a href="#">Policies</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a class="sign-in" href="#">Sign In</a></li>
+          <li><a class="sign-up" href="#">Sign Up</a></li>
         </ul>
       </div>
     </header>
@@ -29,6 +40,7 @@
         <h1>Wherever you need to go, we'll keep your pooch safe, and happy.</h1>
         <div>
           <!-- Where When Woof Form -->
+          <input type='text' class="datepicker-here" data-position="right top" />
         </div>
       </div>
 
