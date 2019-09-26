@@ -1,85 +1,84 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Bork co.</title>
 
-    <link rel="stylesheet" href="assets/datepicker/css/datepicker.min.css">
-    <link rel="stylesheet" href="https://use.typekit.net/lhu3eel.css">
-    <link rel="stylesheet" href="/css/styles.css">
-    
-    <script src="./assets/js/jquery-3.4.1.min.js"></script>
-    <script src="assets/datepicker/js/datepicker.min.js"></script>
+<head>
+  <meta charset="utf-8">
+  <title>Bork co.</title>
 
-    <!-- Include English language -->
-    <script src="assets/datepicker/js/i18n/datepicker.en.js"></script>
-  </head>
-  <body>
-    <header class="o-header">
-      <!-- header navigation -->
-      <div class="c-brand-logo">
-        <img src="assets/Logo@2x.png" alt="bork co." >
+  <link rel="stylesheet" href="https://use.typekit.net/lhu3eel.css">
+  <link rel="stylesheet" href="/css/styles.css">
+
+  <script src="./assets/js/jquery-3.4.1.min.js"></script>
+  <script src="assets/js/datepicker.js"></script>
+  <script src="assets/js/datepicker.en.js"></script>
+</head>
+
+<body>
+  <header class="o-header">
+    <!-- header navigation -->
+    <div class="c-brand-logo">
+      <img src="assets/Logo@2x.png" alt="bork co.">
+    </div>
+    <div class="o-navigation">
+      <!-- Dropdown Icon -->
+      <div class="menu-icon">
+        <img src="assets/MenuIcon2x.png" alt="Menu">
       </div>
-      <div class="o-navigation">
-        <!-- Dropdown Icon -->
-        <div class="menu-icon">
-          <img src="assets/MenuIcon2x.png" alt="Menu" >
-        </div>
-        <!-- Nav Items -->
-        <ul class="o-nav__items">
-          <li><a href="#">Locations</a></li>
-          <li><a href="#">Policies</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a class="sign-in" href="#">Sign In</a></li>
-          <li><a class="sign-up" href="#">Sign Up</a></li>
-        </ul>
-      </div>
-    </header>
+      <!-- Nav Items -->
+      <ul class="o-nav__items">
+        <li><a href="#">Locations</a></li>
+        <li><a href="#">Policies</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a class="sign-in" href="#">Sign In</a></li>
+        <li><a class="sign-up" href="#">Sign Up</a></li>
+      </ul>
+    </div>
+  </header>
 
-    <div class="o-content">
-      <!-- Main Hero -->
-      <div class="o-hero">
-        <h1>Wherever you need to go, we'll keep your pooch safe, and happy.</h1>
-        <div>
-          <!-- Where When Woof Form -->
-          <form action="">
-            <input type="range" name="test" id="">
-            <input type='text' class="datepick" data-position="bottom center" data-language="en" data-multiple-dates-separator= " - "/>
-          </form>
-        </div>
-      </div>
-
+  <div class="o-content">
+    <!-- Main Hero -->
+    <div class="o-hero">
+      <h1>Wherever you need to go, we'll keep your pooch safe, and happy.</h1>
       <div>
-        <!-- Our Locations -->
-        <h2>Our Locations</h2>
-        <div class="o-row">
-          <div class="o-column--50">
-            <p>Hello World. More content this time with more content and more words.</p>
-          </div>
-          <div class="o-column--50">
-            <p>Hello Again. This one too with more words and more things in it. Plus more words with meaning except not really.</p>
-          </div>
-        </div>
-      </div>
-      <div>
-        <!-- Features -->
-      </div>
-      <div>
-        <!-- Remote Access -->
+        <!-- Where When Woof Form -->
+        <form action="">
+          <input type="range" name="test" id="">
+          <input type='text' class="datepick" data-position="bottom center" data-language="en" data-multiple-dates-separator=" - " />
+        </form>
       </div>
     </div>
-    <footer>
-      <!-- 4 col footer -->
-    </footer>
 
-    <!-- TODO: Move this to own JS File -->
-    <script>
-        $('.datepick').datepicker({
-          language: 'en',
-          minDate: new Date(),
-          range: "true",
+    <div>
+      <!-- Our Locations -->
+      <h2>Our Locations</h2>
+      <div class="o-row">
+        <div class="o-column--50">
+          <p>Hello World. More content this time with more content and more words.</p>
+        </div>
+        <div class="o-column--50">
+          <p>Hello Again. This one too with more words and more things in it. Plus more words with meaning except not really.</p>
+        </div>
+      </div>
+    </div>
+    <div>
+      <!-- Features -->
+    </div>
+    <div>
+      <!-- Remote Access -->
+    </div>
+  </div>
+  <footer>
+    <!-- 4 col footer -->
+  </footer>
 
-        });
-      </script>
-  </body>
+  <!-- TODO: Move this to own JS File -->
+  <script>
+    $('.datepick').datepicker({
+      language: 'en',
+      minDate: new Date(),
+      range: "true",
+    });
+  </script>
+</body>
+
 </html>
