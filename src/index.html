@@ -4,13 +4,15 @@
     <meta charset="utf-8">
     <title>Bork co.</title>
 
+    <link rel="stylesheet" href="assets/datepicker/css/datepicker.min.css">
     <link rel="stylesheet" href="https://use.typekit.net/lhu3eel.css">
     <link rel="stylesheet" href="/css/styles.css">
-    <link rel="stylesheet" href="dist/css/datepicker.min.css">
-    <script src="dist/js/datepicker.min.js"></script>
-    <!-- Include English language -->
-    <script src="dist/js/i18n/datepicker.en.js"></script>
     
+    <script src="./assets/js/jquery-3.4.1.min.js"></script>
+    <script src="assets/datepicker/js/datepicker.min.js"></script>
+
+    <!-- Include English language -->
+    <script src="assets/datepicker/js/i18n/datepicker.en.js"></script>
   </head>
   <body>
     <header class="o-header">
@@ -40,7 +42,10 @@
         <h1>Wherever you need to go, we'll keep your pooch safe, and happy.</h1>
         <div>
           <!-- Where When Woof Form -->
-          <input type='text' class="datepicker-here" data-position="right top" />
+          <form action="">
+            <input type="range" name="test" id="">
+            <input type='text' class="datepick" data-position="bottom center" data-language="en" data-multiple-dates-separator= " - "/>
+          </form>
         </div>
       </div>
 
@@ -66,5 +71,15 @@
     <footer>
       <!-- 4 col footer -->
     </footer>
+
+    <!-- TODO: Move this to own JS File -->
+    <script>
+        $('.datepick').datepicker({
+          language: 'en',
+          minDate: new Date(),
+          range: "true",
+
+        });
+      </script>
   </body>
 </html>
