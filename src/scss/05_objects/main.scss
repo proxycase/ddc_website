@@ -1,5 +1,48 @@
-html {
-  padding: $spacing-medium;
+$headerHeight: rem(90px);
+
+.o-header {
+  display: grid;
+  grid-template-columns: 0.25fr 0.75fr;
+  grid-template-areas: "logo navigation";
+  margin: 0 $spacing-medium;
+  height: $headerHeight;
+  background: #C6C6C6; // for testing
+
+  .c-brand-logo {
+    grid-area: logo;
+    display: flex;
+
+    img {
+      height: $headerHeight;
+    }
+  }
+
+  .o-navigation {
+    grid-area: navigation;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+    flex-grow: 1;
+
+    .o-nav__items {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      // height: 100%;
+      margin: 0;
+
+      li {
+        list-style: none;
+        padding: $spacing-small;
+        justify-content: center;
+
+        a {
+          color: blue;
+        }
+      }
+    }
+  }
 }
 
 .o-row {
@@ -8,14 +51,26 @@ html {
   flex-wrap: wrap;
 }
 
-.o-column-50 {
-  padding: $spacing-medium;
+.o-column--50 {
+  padding: $spacing-large;
   max-width: rem(600px);
   flex-grow: 1;
 }
 
-.o-column-33 {
+.o-column--33 {
   display: block;
-  padding: $spacing-medium;
+  padding: $spacing-large;
   flex-grow: 1;
+}
+
+.o-content {
+  padding-left: $spacing-large;
+  padding-right: $spacing-large;
+}
+
+.o-hero {
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
