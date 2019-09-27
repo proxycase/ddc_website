@@ -1,15 +1,21 @@
 .c-button {
-  padding: $spacing-small;
-  padding-top: $spacing-medium;
+  padding: $spacing-medium $spacing-large;
   border: none;
   box-shadow: 1px 2px 2px rgba(74, 74, 74, 60);
   border-radius: 3px;
+  transition: all 0.3s ease-out;
+}
+
+%hover--animate {
+  box-shadow: 1px 3px 3px rgba(74, 74, 74, 60);
 }
 
 .c-button--primary {
   background: $color-primary;
 
   &:hover {
+    @extend %hover--animate;
+
     background: $color-primary-hover;
   }
 }
@@ -19,6 +25,8 @@
   background: $color-secondary;
 
   &:hover {
+    @extend %hover--animate;
+
     background: $color-secondary-hover;
   }
 }

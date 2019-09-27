@@ -3,7 +3,7 @@
 $color-background: #FFF;
 
 $color-primary: #FA8D62;
-$color-primary-hover: darken($color-primary, 10%);
+$color-primary-hover: lighten($color-primary, 10%);
 $color-secondary: #2B616D;
 $color-secondary-hover: darken($color-secondary, 10%);
 $color-white: #FFF;
@@ -22,7 +22,7 @@ $color-border-input: rgba($color-black, 0.15);
 $color-border-input-hover: rgba($color-black, 0.3);
 $color-border-input-active: rgba($color-black, 0.4);
 
-$color-shadow: rgba(0, 0, 0, 0.15);
+$color-shadow: rgba(75, 75, 75, 0.15);
 
 $color-mask: rgba($color-black, 0.3);
 
