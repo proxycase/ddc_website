@@ -39,16 +39,29 @@
     <!-- Main Hero -->
     <div class="o-hero">
       <h1>Wherever you need to go, we'll keep your pooch safe, and happy.</h1>
-      <div>
+      <div class="c-booking">
         <!-- Where When Woof Form -->
-        <form action="">
-          <input type="range" name="test" id="">
+        <form id="dogSearch" action="">
+          <select name="where" id="">
+            <option value="avondale">Chicago - Avondale</option>
+            <option value="portage">Chicago - Portage Park</option>
+          </select>
           <input type='text' class="datepick" data-position="bottom center" data-language="en" data-multiple-dates-separator=" - " />
+          <select name="count" id="">
+            <option value="1">1 Dog</option>
+            <option value="2">2 Dogs</option>
+            <option value="3">3 Dogs</option>
+            <option value="4">4 Dogs</option>
+            <option value="5">5 Dogs</option>
+            <option value="6">6 Dogs</option>
+            <option value="7">7+ Dogs</option>
+          </select>
+          <input type="submit" value="submit">
         </form>
       </div>
     </div>
 
-    <div>
+    <div class="c-section__locations">
       <!-- Our Locations -->
       <h2>Our Locations</h2>
       <div class="o-row">

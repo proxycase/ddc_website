@@ -1,0 +1,24 @@
+.c-button {
+  padding: $spacing-small;
+  padding-top: $spacing-medium;
+  border: none;
+  box-shadow: 1px 2px 2px rgba(74, 74, 74, 60);
+  border-radius: 3px;
+}
+
+.c-button--primary {
+  background: $color-primary;
+
+  &:hover {
+    background: $color-primary-hover;
+  }
+}
+
+.c-button--secondary {
+  color: $color-white;
+  background: $color-secondary;
+
+  &:hover {
+    background: $color-secondary-hover;
+  }
+}

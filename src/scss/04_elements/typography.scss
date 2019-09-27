@@ -40,3 +40,11 @@ small {
   color: $color-accent;
   font-size: $fontSize14;
 }
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: 'unit-rounded', "Open Sans", sans-serif;
+}
