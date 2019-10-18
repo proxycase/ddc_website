@@ -1,0 +1,8 @@
+a {
+  text-decoration: none;
+  transition: all 0.3s;
+
+  &:hover {
+    text-shadow: 0 5px 8px rgba(34, 34, 34, 0.25);
+  }
+}

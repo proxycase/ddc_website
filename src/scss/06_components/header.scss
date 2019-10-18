@@ -2,6 +2,7 @@ $headerHeight: rem(90px);
 
 .o-header {
   display: grid;
+  vertical-align: center;
   grid-template-columns: 0.25fr 0.75fr;
   grid-template-areas: "logo navigation";
   padding: 0 $spacing-medium;
@@ -13,42 +14,6 @@ $headerHeight: rem(90px);
 
     img {
       height: $headerHeight;
-    }
-  }
-
-  .o-navigation {
-    grid-area: navigation;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex-grow: 1;
-
-    // Nav Icon
-    .menu-icon {
-      cursor: pointer;
-      user-select: none;
-      display: none;
-    }
-
-    // Nav Items
-    .o-nav__items {
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-end;
-      margin: 0;
-      transition: max-height 0.2s ease-out;
-
-      li {
-        list-style: none;
-        padding: $spacing-small;
-        justify-content: center;
-
-        a {
-          text-decoration: none;
-          color: $color-secondary;
-        }
-      }
     }
   }
 }

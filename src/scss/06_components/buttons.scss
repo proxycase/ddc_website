@@ -1,17 +1,19 @@
 .c-button {
-  padding: $spacing-medium $spacing-large;
+  padding: $spacing-small $spacing-large;
   border: none;
-  box-shadow: 1px 2px 2px rgba(74, 74, 74, 60);
+  box-shadow: 0 5px 8px 0 rgba(20, 20, 20, 0.1);
   border-radius: 3px;
   transition: all 0.3s ease-out;
 }
 
 %hover--animate {
-  box-shadow: 1px 3px 3px rgba(74, 74, 74, 60);
+  box-shadow: 0 5px 8px 0 rgba(34, 34, 34, 0.25);
 }
 
 .c-button--primary {
+  color: $color-white;
   background: $color-primary;
+  text-decoration: none;
 
   &:hover {
     @extend %hover--animate;
@@ -34,9 +36,28 @@
 .c-button--tertiary {
   color: $color-secondary;
   background: $color-white;
-  box-shadow: 1px 2px 2px 1px rgba(74, 74, 74, 30);
 
   &:hover {
     background: $color-secondary-hover;
+    color: white;
+  }
+}
+
+.c-button--narrow {
+  padding: $spacing-xx-small $spacing-small;
+}
+
+input[type="radio"] {
+  opacity: 0;
+  position: fixed;
+  width: 0;
+
+  & + .c-button--radio {
+    margin: $spacing-x-small;
+  }
+
+  &:checked + .c-button--radio {
+    color: white;
+    background: $color-secondary;
   }
 }

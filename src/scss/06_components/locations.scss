@@ -1,0 +1,11 @@
+.c-section__locations {
+  display: flex;
+  flex-direction: column;
+  padding: $spacing-medium;
+}
+
+.c-location {
+  img {
+    width: 100%;
+  }
+}

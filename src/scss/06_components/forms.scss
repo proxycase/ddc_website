@@ -1,0 +1,52 @@
+%form-input:not(.c-button) {
+  display: inline-block;
+  padding: $spacing-small;
+  margin: 0 $spacing-xx-small;
+  border: 2px solid lightgrey;
+  border-radius: 3px;
+  vertical-align: middle;
+  justify-content: center;
+  min-height: 50px;
+}
+
+.c-booking {
+  display: none;
+
+  @media #{$medium-up} {
+    display: flex;
+  }
+
+  flex-direction: column;
+  justify-content: center;
+
+  h2 {
+    line-height: 0;
+  }
+
+  select {
+    @extend %form-input;
+
+    appearance: none;
+  }
+
+  input {
+    @extend %form-input;
+  }
+
+  & [type="submit"] {
+    padding: $spacing-medium $spacing-large;
+  }
+}
+
+.c-booking-button {
+  display: block;
+  flex-grow: 0;
+
+  @media #{$medium-up} {
+    display: none;
+  }
+}
+
+.booking-type {
+  margin: $spacing-large 0;
+}

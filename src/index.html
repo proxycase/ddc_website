@@ -15,21 +15,24 @@
 
 <body>
   <header class="o-header">
-    <!-- header navigation -->
+    <!-- Brand -->
     <div class="c-brand-logo">
       <img src="assets/Logo@2x.png" alt="bork co.">
     </div>
-    <div class="o-navigation">
-      <!-- Dropdown Icon -->
-      <div class="menu-icon">
-        <img src="assets/MenuIcon2x.png" alt="Menu">
-      </div>
+
+    <!-- Mobile Navigation -->
+    <div class="o-nav__mobile">
+      <img class="menu-icon" src="./assets/MenuIcon2x.png" alt="Menu">
+    </div>
+
+    <!-- Desktop Navigation -->
+    <div class="o-nav__desktop">
       <!-- Nav Items -->
       <ul class="o-nav__items">
         <li><a href="#">Locations</a></li>
         <li><a href="#">Policies</a></li>
         <li><a href="#">Contact</a></li>
-        <li><a class="c-button c-button--primary sign-in" href="#">Sign In</a></li>
+        <li><a class="c-button c-button--secondary" href="#">Log In</a></li>
       </ul>
     </div>
   </header>
@@ -38,13 +41,31 @@
     <!-- Main Hero -->
     <div class="o-hero">
       <h1>Wherever you need to go, we'll keep your pooch safe, and happy.</h1>
+      <a  class="c-button c-button--primary c-booking-button" href="#" rel="noopener noreferrer">Book Now</a>
       <div class="c-booking">
-        <!-- Where When Woof Form -->
         <form id="dogSearch" action="">
+          <div class="booking-type">
+            <input type="radio" name="booking-type" id="day-care" checked>
+            <label for="day-care" class="c-button c-button--tertiary c-button--narrow c-button--radio">
+              Day Care
+            </label>
+
+            <input type="radio" name="booking-type" id="day-care-recurring">
+            <label for="day-care-recurring" class="c-button c-button--tertiary c-button--narrow c-button--radio">
+              Day Care Recurring
+            </label>
+
+            <input type="radio" name="booking-type" id="boarding">
+            <label for="boarding" class="c-button c-button--tertiary c-button--narrow c-button--radio">
+              Boarding
+            </label>
+          </div>
+
           <select name="where" id="">
             <option value="avondale">Chicago - Avondale</option>
             <option value="portage">Chicago - Portage Park</option>
           </select>
+
           <input type='text' class="datepick" data-position="bottom center" data-language="en" data-multiple-dates-separator=" - " />
           <select name="count" id="">
             <option value="1">1 Dog</option>
@@ -55,33 +76,49 @@
             <option value="6">6 Dogs</option>
             <option value="7">7+ Dogs</option>
           </select>
+          
           <input class="c-button c-button--primary" type="submit" value="submit">
         </form>
       </div>
     </div>
 
-    <div class="c-section__locations">
-      <!-- Our Locations -->
+    <div class="o-section c-section__locations">
       <h2>Our Locations</h2>
+      <hr class="c-section--hr-thin">
       <div class="o-row">
-        <div class="o-column--50">
+        <div class="o-column--50 c-location">
+          <img src="./assets/Map.png" alt="Map of Avondale Location">
+          <h3>Chicago - Avondale</h3>
           <p>Hello World. More content this time with more content and more words.</p>
         </div>
-        <div class="o-column--50">
+        <div class="o-column--50 c-location">
+          <img src="./assets/Map.png" alt="Map of Portage Park Location">
+          <h3>Chicago - Portage Park</h3>
           <p>Hello Again. This one too with more words and more things in it. Plus more words with meaning except not really.</p>
         </div>
       </div>
     </div>
-    <div>
+    <div class="o-section c-section__features">
       <!-- Features -->
-      Features
+      <h2>Features</h2>
+      <hr class="c-section--hr-thin">
+
+      <div class="o-row">
+        <div class="o-column-33">Single Col</div>
+        <div class="o-column-33">Single Col</div>
+        <div class="o-column-33">Single Col</div>
+      </div>
+
     </div>
-    <div>
+    <div class="o-section c-section__remote">
       <!-- Remote Access -->
+      <h2>Remote Access</h2>
+      <hr class="c-section--hr-thin">
     </div>
   </div>
   <footer>
     <!-- 4 col footer -->
+    <h2>It'sa spicy footer</h2>
   </footer>
 
   <!-- TODO: Move this to own JS File -->
