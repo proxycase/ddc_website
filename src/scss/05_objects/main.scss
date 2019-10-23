@@ -36,11 +36,11 @@
     text-align: center;
     line-height: 0;
   }
+}
 
-  hr {
-    height: 1px;
-    border: 0;
-    background-color: #BBB;
-    width: 10%;
-  }
+.o-underline {
+  border-bottom: 1px grey solid;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 0.8em;
 }
