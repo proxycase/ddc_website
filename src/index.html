@@ -14,7 +14,7 @@
 </head>
 
 <body>
-  <header class="o-header">
+  <header class="c-header">
     <!-- Brand -->
     <div class="c-brand-logo">
       <img src="assets/Logo@2x.png" alt="bork co.">
@@ -40,11 +40,13 @@
   <main class="o-content">
     <!-- Main Hero -->
     <section class="o-hero">
-      <h1>Wherever you need to go, we'll keep your pooch safe, and happy.</h1>
-      <a  class="c-button c-button--primary c-booking-button" href="#" rel="noopener noreferrer">Book Now</a>
+      <header class="c-booking__header">
+        <h1>Wherever you need to go, we'll keep your pooch safe, and happy.</h1>
+        <a  class="c-button c-button--primary c-booking-button" href="#" rel="noopener noreferrer">Book Now</a>
+      </header>
       <article class="c-booking">
         <form id="dogSearch" action="">
-          <div class="booking-type">
+          <fieldset class="booking-type">
             <input type="radio" name="booking-type" id="day-care" checked>
             <label for="day-care" class="c-button c-button--tertiary c-button--narrow c-button--radio">
               Day Care
@@ -59,7 +61,7 @@
             <label for="boarding" class="c-button c-button--tertiary c-button--narrow c-button--radio">
               Boarding
             </label>
-          </div>
+          </fieldset>
 
           <select name="where" id="">
             <option value="avondale">Chicago - Avondale</option>
