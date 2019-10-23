@@ -1,8 +1,9 @@
 .c-button {
-  padding: $spacing-small $spacing-large;
+  border-radius: 3px;
   border: none;
   box-shadow: 0 5px 8px 0 rgba(20, 20, 20, 0.1);
-  border-radius: 3px;
+  padding: $spacing-small $spacing-large;
+  padding-top: $spacing-medium;
   transition: all 0.3s ease-out;
 }
 
@@ -45,6 +46,7 @@
 
 .c-button--narrow {
   padding: $spacing-xx-small $spacing-small;
+  padding-top: $spacing-x-small;
 }
 
 input[type="radio"] {
