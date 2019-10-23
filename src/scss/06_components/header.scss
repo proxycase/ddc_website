@@ -1,6 +1,6 @@
 $headerHeight: rem(90px);
 
-.o-header {
+.c-header {
   display: grid;
   vertical-align: center;
   grid-template-columns: 0.25fr 0.75fr;
@@ -16,4 +16,10 @@ $headerHeight: rem(90px);
       height: $headerHeight;
     }
   }
+}
+
+.c-booking__header {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
