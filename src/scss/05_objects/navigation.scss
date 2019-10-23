@@ -1,7 +1,7 @@
 .o-nav__mobile {
+  align-items: center;
   display: flex;
   justify-content: right;
-  align-items: center;
   padding-right: $spacing-small;
 
   @media #{$medium-up} {
@@ -21,17 +21,17 @@
     display: flex;
   }
 
+  flex-direction: column;
+  flex-grow: 1;
   grid-area: navigation;
   height: 100%;
-  flex-direction: column;
   justify-content: center;
-  flex-grow: 1;
 
   // Nav Icon
   .menu-icon {
     cursor: pointer;
-    user-select: none;
     display: none;
+    user-select: none;
   }
 
   // Nav Items
@@ -43,13 +43,13 @@
     transition: max-height 0.2s ease-out;
 
     li {
+      justify-content: center;
       list-style: none;
       padding: $spacing-small;
-      justify-content: center;
 
       a:not(.c-button) {
-        text-decoration: none;
         color: $color-secondary;
+        text-decoration: none;
       }
     }
   }
