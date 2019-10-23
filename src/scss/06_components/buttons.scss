@@ -1,52 +1,52 @@
-.c-button {
-  border-radius: 3px;
-  border: none;
-  box-shadow: 0 2px 3px 0 rgba(20, 20, 20, 0.1), 0 2px 10px 4px rgba(0, 0, 0, 0.1);
-  padding: $spacing-small $spacing-large;
-  padding-top: $spacing-medium;
-  transition: all 0.3s ease-out;
-}
-
 %hover--animate {
   box-shadow: 0 5px 8px 0 rgba(34, 34, 34, 0.25);
 }
 
-.c-button--primary {
-  color: $color-white;
-  background: $color-primary;
+.c-button {
+  border-radius: 3px;
+  border: none;
+  box-shadow: $color-double-shadow;
+  padding: $spacing-small $spacing-large;
+  padding-top: $spacing-medium;
   text-decoration: none;
+  transition: all 0.3s ease-out;
 
-  &:hover {
-    @extend %hover--animate;
+  &--primary {
+    color: $color-white;
+    background: $color-primary;
 
-    background: $color-primary-hover;
+    &:hover {
+      @extend %hover--animate;
+
+      background: $color-primary-hover;
+    }
   }
-}
 
-.c-button--secondary {
-  color: $color-white;
-  background: $color-secondary;
+  &--secondary {
+    color: $color-white;
+    background: $color-secondary;
 
-  &:hover {
-    @extend %hover--animate;
+    &:hover {
+      @extend %hover--animate;
 
-    background: $color-secondary-hover;
+      background: $color-secondary-hover;
+    }
   }
-}
 
-.c-button--tertiary {
-  color: $color-secondary;
-  background: $color-white;
+  &--tertiary {
+    color: $color-secondary;
+    background: $color-white;
 
-  &:hover {
-    background: $color-secondary-hover;
-    color: white;
+    &:hover {
+      background: $color-secondary-hover;
+      color: white;
+    }
   }
-}
 
-.c-button--narrow {
-  padding: $spacing-xx-small $spacing-small;
-  padding-top: $spacing-x-small;
+  &--narrow {
+    padding: $spacing-xx-small $spacing-small;
+    padding-top: $spacing-x-small;
+  }
 }
 
 input[type="radio"] {
