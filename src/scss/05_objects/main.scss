@@ -2,48 +2,16 @@ html {
   @include clearfix;
 
   max-width: 1200px;
+  padding: 0 20px;
 
   margin: {
     left: auto;
     right: auto;
   }
-}
 
-.clean-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.o-row {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
-.feature__item {
-  @extend %full-to-half;
-
-  &--third {
-    @extend %full-to-third;
+  @media #{$medium-up} {
+    padding: 0;
   }
-}
-
-.feature__image {
-  width: 100%;
-}
-
-// replace and extend %flex-grid--half
-.o-column--50 {
-  padding: $spacing-large;
-  max-width: rem(600px);
-  flex-grow: 1;
-}
-
-// replace and extend %flex-grid--third
-.o-column--33 {
-  padding: $spacing-large;
-  flex-grow: 1;
 }
 
 .o-hero {

@@ -2,15 +2,9 @@
   align-items: center;
   display: flex;
   justify-content: right;
-  padding-right: $spacing-small;
 
   @media #{$medium-up} {
     display: none;
-  }
-
-  img {
-    width: rem(35px);
-    height: rem(35px);
   }
 }
 
@@ -40,6 +34,7 @@
     flex-direction: row;
     justify-content: flex-end;
     margin: 0;
+    padding: 2em;
     transition: max-height 0.2s ease-out;
 
     li {

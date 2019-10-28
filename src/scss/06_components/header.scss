@@ -2,19 +2,18 @@ $headerHeight: rem(90px);
 
 .c-header {
   display: grid;
-  vertical-align: center;
-  grid-template-columns: 0.25fr 0.75fr;
+  grid-template-columns: 0.25fr 1fr;
   grid-template-areas: "logo navigation";
-  padding: 0 $spacing-medium;
   height: $headerHeight;
+  width: 100%;
+}
 
-  .c-brand-logo {
-    grid-area: logo;
-    display: flex;
+.c-brand-logo {
+  grid-area: logo;
+  display: flex;
 
-    img {
-      height: $headerHeight;
-    }
+  img {
+    height: $headerHeight;
   }
 }
 
