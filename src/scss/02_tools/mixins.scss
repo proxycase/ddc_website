@@ -11,17 +11,22 @@
   }
 }
 
-%flex-grid {
-  display: flex;
-  justify-content: space-between;
+%full-to-half {
+  width: 100%;
+  overflow: hidden;
+
+  @media #{$medium-up} {
+    margin: 0 auto;
+    width: 46%;
+  }
 }
 
-%flex-grid--half {
-  width: 49%;
+%full-to-third {
+  width: 100%;
+  overflow: hidden;
+
+  @media #{$medium-up} {
+    margin: 0 auto;
+    width: 32%;
+  }
 }
-
-%flex-grid--third {
-  width: 32%;
-}
-
-
