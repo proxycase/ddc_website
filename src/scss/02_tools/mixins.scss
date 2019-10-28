@@ -3,3 +3,25 @@
 
   @return #{$remSize}rem;
 }
+
+@mixin clearfix {
+  &::after {
+    clear: both;
+    content: "";
+  }
+}
+
+%flex-grid {
+  display: flex;
+  justify-content: space-between;
+}
+
+%flex-grid--half {
+  width: 49%;
+}
+
+%flex-grid--third {
+  width: 32%;
+}
+
+

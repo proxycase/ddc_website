@@ -1,23 +1,57 @@
+html {
+  @include clearfix;
+
+  max-width: 1200px;
+
+  margin: {
+    left: auto;
+    right: auto;
+  }
+}
+
+.clean-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
 .o-row {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
 
+.full-to-half {
+  width: 100%;
+  overflow: hidden;
+
+  @media (min-width: 600px) {
+    margin: 0 auto;
+    width: 46%;
+  }
+}
+
+.feature__image {
+  width: 100%;
+}
+
+// replace and extend %flex-grid
+.o-content {
+  padding-left: $spacing-large;
+  padding-right: $spacing-large;
+}
+
+// replace and extend %flex-grid--half
 .o-column--50 {
   padding: $spacing-large;
   max-width: rem(600px);
   flex-grow: 1;
 }
 
+// replace and extend %flex-grid--third
 .o-column--33 {
   padding: $spacing-large;
   flex-grow: 1;
-}
-
-.o-content {
-  padding-left: $spacing-large;
-  padding-right: $spacing-large;
 }
 
 .o-hero {
