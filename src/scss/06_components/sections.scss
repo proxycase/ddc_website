@@ -1,0 +1,35 @@
+.c-section__locations {
+  display: flex;
+  flex-direction: column;
+  padding: $spacing-medium;
+}
+
+.c-location {
+  img {
+    width: 100%;
+  }
+}
+
+.c-feature {
+  // section
+}
+
+.c-feature__header {
+  // contains h2 and p text
+}
+
+.c-feature__list {
+  // ul level
+}
+
+.c-feature__item {
+  // li
+}
+
+.c-feature__figure {
+  // container for img
+}
+
+.c-feature__link {
+  // CTA
+}
