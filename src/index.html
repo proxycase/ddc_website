@@ -11,40 +11,51 @@
   <script src="./assets/js/jquery-3.4.1.min.js"></script>
   <script src="assets/js/datepicker.js"></script>
   <script src="assets/js/datepicker.en.js"></script>
+  <script src="assets/js/main.js"></script>
 </head>
 
 <body>
-  <header class="o-header">
+  <header class="c-header">
     <!-- Brand -->
-    <div class="c-brand-logo">
-      <img src="assets/Logo@2x.png" alt="bork co.">
+    <div class="c-brand__container">
+      <img class="c-brand__img" src="assets/Logo@2x.png" alt="bork co.">
     </div>
 
     <!-- Mobile Navigation -->
-    <div class="o-nav__mobile">
-      <img class="menu-icon" src="./assets/MenuIcon2x.png" alt="Menu">
-    </div>
+    <nav id="mobileMenu" class="c-nav__mobile">
+      <img class="c-nav__icon" src="./assets/MenuIcon2x.png" alt="Menu">
+    </nav>
 
     <!-- Desktop Navigation -->
-    <div class="o-nav__desktop">
+    <nav class="c-nav__desktop">
       <!-- Nav Items -->
-      <ul class="o-nav__items">
-        <li><a href="#">Locations</a></li>
-        <li><a href="#">Policies</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a class="c-button c-button--secondary" href="#">Log In</a></li>
+      <ul class="clean-list c-nav__items">
+        <li class="c-nav__item">
+          <a class="c-nav__link" href="#">Locations</a>
+        </li>
+        <li class="c-nav__item">
+          <a class="c-nav__link" href="#">Policies</a>
+        </li>
+        <li class="c-nav__item">
+          <a class="c-nav__link" href="#">Contact</a>
+        </li>
+        <li class="c-nav__item">
+          <a class="c-nav__link c-button c-button--secondary" href="#">Log In</a>
+        </li>
       </ul>
-    </div>
+    </nav>
   </header>
 
-  <div class="o-content">
-    <!-- Main Hero -->
-    <div class="o-hero">
-      <h1>Wherever you need to go, we'll keep your pooch safe, and happy.</h1>
-      <a  class="c-button c-button--primary c-booking-button" href="#" rel="noopener noreferrer">Book Now</a>
+  <main>
+    <!-- Main -->
+    <section class="o-main">
+      <header class="c-booking__header">
+        <h1>Wherever you need to go, we'll keep your pooch safe, and happy.</h1>
+        <a class="c-button c-button--primary c-booking-button" href="#" rel="noopener noreferrer">Book Now</a>
+      </header>
       <div class="c-booking">
         <form id="dogSearch" action="">
-          <div class="booking-type">
+          <fieldset class="booking-type">
             <input type="radio" name="booking-type" id="day-care" checked>
             <label for="day-care" class="c-button c-button--tertiary c-button--narrow c-button--radio">
               Day Care
@@ -59,66 +70,99 @@
             <label for="boarding" class="c-button c-button--tertiary c-button--narrow c-button--radio">
               Boarding
             </label>
-          </div>
+          </fieldset>
 
-          <select name="where" id="">
-            <option value="avondale">Chicago - Avondale</option>
-            <option value="portage">Chicago - Portage Park</option>
-          </select>
+          <fieldset>
+            <select name="where" id="">
+              <option value="avondale">Chicago - Avondale</option>
+              <option value="portage">Chicago - Portage Park</option>
+            </select>
 
-          <input type='text' class="datepick" data-position="bottom center" data-language="en" data-multiple-dates-separator=" - " />
-          <select name="count" id="">
-            <option value="1">1 Dog</option>
-            <option value="2">2 Dogs</option>
-            <option value="3">3 Dogs</option>
-            <option value="4">4 Dogs</option>
-            <option value="5">5 Dogs</option>
-            <option value="6">6 Dogs</option>
-            <option value="7">7+ Dogs</option>
-          </select>
-          
-          <input class="c-button c-button--primary" type="submit" value="submit">
+            <input type='text' class="datepick" data-position="bottom center" data-language="en" data-multiple-dates-separator=" - " />
+            <select name="count" id="">
+              <option value="1">1 Dog</option>
+              <option value="2">2 Dogs</option>
+              <option value="3">3 Dogs</option>
+              <option value="4">4 Dogs</option>
+              <option value="5">5 Dogs</option>
+              <option value="6">6 Dogs</option>
+              <option value="7">7+ Dogs</option>
+            </select>
+            <input class="c-button c-button--primary" type="submit" value="Book Now">
+          </fieldset>
+
         </form>
       </div>
-    </div>
+    </section>
+  </main>
 
-    <div class="o-section c-section__locations">
-      <h2>Our Locations</h2>
-      <hr class="c-section--hr-thin">
-      <div class="o-row">
-        <div class="o-column--50 c-location">
-          <img src="./assets/Map.png" alt="Map of Avondale Location">
-          <h3>Chicago - Avondale</h3>
-          <p>Hello World. More content this time with more content and more words.</p>
-        </div>
-        <div class="o-column--50 c-location">
-          <img src="./assets/Map.png" alt="Map of Portage Park Location">
-          <h3>Chicago - Portage Park</h3>
-          <p>Hello Again. This one too with more words and more things in it. Plus more words with meaning except not really.</p>
-        </div>
-      </div>
-    </div>
-    <div class="o-section c-section__features">
-      <!-- Features -->
-      <h2>Features</h2>
-      <hr class="c-section--hr-thin">
+  <!-- Our Locations -->
+  <section class="c-feature">
+    <header class="c-feature__header">
+        <h2 class="o-underline">Our Locations</h2>
+    </header>
+    
+    <ul class="c-feature__list">
+      <li class="c-feature__item">
+        <img class="c-feature__image" src="./assets/Map.png" alt="Map of Avondale Location">
+        <h3>Chicago - Avondale</h3>
+        <p>Our original location located in the dog-friendly neighborhood of Avondale. Easy drop-off and pick-up.</p>
+      </li>
 
-      <div class="o-row">
-        <div class="o-column-33">Single Col</div>
-        <div class="o-column-33">Single Col</div>
-        <div class="o-column-33">Single Col</div>
-      </div>
+      <li class="c-feature__item">
+        <img class="c-feature__image" src="./assets/Map.png" alt="Map of Portage Park Location">
+        <h3>Chicago - Portage Park</h3>
+        <p>Our newest location with increased capacity, same great quality of services, and a pool!</p>
+      </li>
+    </ul>
+  </section>
 
-    </div>
-    <div class="o-section c-section__remote">
-      <!-- Remote Access -->
-      <h2>Remote Access</h2>
-      <hr class="c-section--hr-thin">
-    </div>
-  </div>
+  <!--  New Features -->
+  <section class="c-feature">
+    <header class="c-feature__header o-underline">
+      <h2>What's great about staying with us?</h2>
+      <p>Still on the fence?</p>
+    </header>
+
+    <ul class="c-feature__list">
+      <li class="c-feature__item c-feature__item--third">
+        <img class="c-feature__image" src="./assets/Map.png" alt="Dog in backseat of car">
+        <h3>It's convenient</h3>
+        <p>
+          Whether you drop off your pet, or use our pick-up service, we're available when you need it.
+        </p>
+        <a href="somewhere.html" class="c-feature__link">
+          Our Hours
+        </a>
+      </li>
+
+      <li class="c-feature__item c-feature__item--third">
+        <img class="c-feature__image" src="./assets/Map.png" alt="Dog in backseat of car">
+        <h3>Treated with Care</h3>
+        <p>
+          With professional vets on staff, you can be assured that your pet is getting the best care they need while you’re away.
+        </p>
+        <a href="somewhere.html" class="c-feature__link">
+          Our Staff
+        </a>
+      </li>
+
+      <li class="c-feature__item c-feature__item--third">
+        <img class="c-feature__image" src="./assets/Map.png" alt="Dog in backseat of car">
+        <h3>It's social!</h3>
+        <p>
+          Pets have all the fun! We have indoor and outdoor spaces with professionally trained staff to handle any breed.
+        </p>
+        <a href="somewhere.html" class="c-feature__link">
+          View our spaces
+        </a>
+      </li>
+    </ul>
+  </section>
+
   <footer>
     <!-- 4 col footer -->
-    <h2>It'sa spicy footer</h2>
+    <h2>It's the footer</h2>
   </footer>
 
   <!-- TODO: Move this to own JS File -->

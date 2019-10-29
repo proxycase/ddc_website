@@ -11,13 +11,14 @@
 
 .c-booking {
   display: none;
+  margin-left: auto;
+  margin-right: auto;
 
   @media #{$medium-up} {
     display: flex;
   }
 
   flex-direction: column;
-  justify-content: center;
 
   h2 {
     line-height: 0;
@@ -49,4 +50,9 @@
 
 .booking-type {
   margin: $spacing-large 0;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
 }

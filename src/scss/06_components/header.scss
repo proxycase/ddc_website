@@ -1,19 +1,80 @@
-$headerHeight: rem(90px);
-
-.o-header {
+.c-header {
   display: grid;
-  vertical-align: center;
-  grid-template-columns: 0.25fr 0.75fr;
+  grid-template-columns: 0.25fr 1fr;
   grid-template-areas: "logo navigation";
-  padding: 0 $spacing-medium;
-  height: $headerHeight;
+  height: $header-height;
+  width: 100%;
+}
 
-  .c-brand-logo {
-    grid-area: logo;
-    display: flex;
+// Brand
+.c-brand__container {
+  grid-area: logo;
+  display: block;
+  height: $header-height;
+}
 
-    img {
-      height: $headerHeight;
-    }
+.c-brand__img {
+  display: block;
+  height: $header-height;
+}
+
+.c-booking__header {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+// Navigation Mobile
+.c-nav__mobile {
+  align-items: center;
+  display: flex;
+  justify-content: right;
+
+  @media #{$medium-up} {
+    display: none;
   }
+}
+
+// Navigation Desktop
+.c-nav__desktop {
+  display: none;
+  flex-direction: column;
+  flex-grow: 1;
+  grid-area: navigation;
+  height: 100%;
+  justify-content: center;
+
+  @media #{$medium-up} {
+    display: flex;
+  }
+}
+
+// Nav items (ul)
+.c-nav__items {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0;
+  transition: max-height 0.2s ease-out;
+}
+
+// Nav items (li)
+.c-nav__item {
+  @extend .c-nav__items;
+
+  justify-content: center;
+  list-style: none;
+  padding: $spacing-small;
+}
+
+.c-nav__link:not(.c-button) {
+  color: $color-secondary;
+  text-decoration: none;
+}
+
+// Nav Icon
+.c-nav__icon {
+  cursor: pointer;
+  user-select: none;
 }

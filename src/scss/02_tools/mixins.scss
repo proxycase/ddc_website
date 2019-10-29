@@ -1,5 +1,38 @@
-@function rem($size) {
-  $remSize: $size / 16px;
+@mixin clearfix {
+  &::after {
+    clear: both;
+    content: "";
+  }
+}
 
-  @return #{$remSize}rem;
+%full-to-half {
+  width: 100%;
+
+  @media #{$medium-up} {
+    margin: 0 auto;
+    width: 46%;
+  }
+}
+
+%full-to-third {
+  width: 100%;
+
+  @media #{$medium-up} {
+    margin: 0 auto;
+    width: 32%;
+  }
+}
+
+// Normalizes all lists that extend this
+%clean-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+// Display as flex row that wraps (used for section ul)
+%flex-row-wrap {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }

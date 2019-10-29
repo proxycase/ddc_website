@@ -1,0 +1,47 @@
+.c-location {
+  img {
+    width: 100%;
+  }
+}
+
+// Main page feature sections
+.c-feature {
+  @extend %clean-list;
+
+  padding-bottom: $spacing-xx-large;
+}
+
+.c-feature__header {
+  text-align: center;
+}
+
+// ul level
+.c-feature__list {
+  @extend %clean-list;
+  @extend %flex-row-wrap;
+
+  padding-bottom: 20px;
+}
+
+.c-feature__item {
+  @extend %full-to-half;
+
+  display: block;
+  margin-bottom: 2em;
+
+  &--third {
+    @extend %full-to-third;
+  }
+}
+
+.c-feature__image {
+  width: 100%;
+}
+
+.c-feature__link {
+  @extend .c-button;
+  @extend .c-button--primary;
+
+  display: inline-block;
+  margin-top: $spacing-small;
+}
