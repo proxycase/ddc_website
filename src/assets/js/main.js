@@ -19,8 +19,10 @@ function toggleMenu() {
 
 function show(item) {
   item.style.display = "block"
+  console.log('showing menu')
 }
 
 function hide(item) {
   item.style.display = "hidden"
+  console.log('hiding menu')
 }
