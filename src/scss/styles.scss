@@ -1,3 +1,4 @@
+@import '01_settings/functions';
 @import '01_settings/tokens';
 @import '01_settings/media-queries';
 @import '02_tools/mixins';
@@ -5,9 +6,8 @@
 @import '04_elements/links';
 @import '04_elements/typography';
 @import '05_objects/main';
-@import '05_objects/navigation';
 @import '06_components/header';
 @import '06_components/forms';
 @import '06_components/buttons';
-@import '06_components/sections';
+@import '06_components/feature';
 @import '07_imported/datepicker';
