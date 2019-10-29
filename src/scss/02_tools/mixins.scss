@@ -10,7 +10,7 @@
 
   @media #{$medium-up} {
     margin: 0 auto;
-    width: 46%;
+    width: 45%;
   }
 }
 
@@ -20,6 +20,15 @@
   @media #{$medium-up} {
     margin: 0 auto;
     width: 32%;
+  }
+}
+
+%full-to-fourths {
+  width: 100%;
+
+  @media #{$small-up} {
+    margin: 0 auto;
+    width: 23%;
   }
 }
 

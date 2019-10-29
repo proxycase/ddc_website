@@ -4,35 +4,30 @@ html {
 }
 
 h1 {
-  color: $color-black;
   font-size: $fontSize36;
   font-weight: $font-weight-bold;
   line-height: $line-height-heading;
 }
 
 h2 {
-  color: $color-black;
   font-size: $fontSize24;
-  font-weight: $font-weight-bold;
+  font-weight: $font-weight-regular;
   line-height: $line-height-heading;
 }
 
 h3 {
-  color: $color-black;
   font-size: $fontSize21;
-  font-weight: $font-weight-bold;
+  font-weight: $font-weight-regular;
   line-height: $line-height-heading;
 }
 
 h4 {
-  color: $color-black;
   font-size: $fontSize18;
-  font-weight: $font-weight-bold;
+  font-weight: $font-weight-semibold;
   line-height: $line-height-heading;
 }
 
 p {
-  color: $color-black;
   font-size: $fontSize16;
 }
 
