@@ -17,8 +17,8 @@
 <body>
   <header class="c-header">
     <!-- Brand -->
-    <span class="c-brand-logo">
-      <img src="assets/Logo@2x.png" alt="bork co.">
+    <span class="c-brand__container">
+      <img class="c-brand__img" src="assets/Logo@2x.png" alt="bork co.">
     </span>
 
     <!-- Mobile Navigation -->
@@ -30,10 +30,18 @@
     <nav class="c-nav__desktop">
       <!-- Nav Items -->
       <ul class="clean-list c-nav__items">
-        <li><a href="#">Locations</a></li>
-        <li><a href="#">Policies</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a class="c-button c-button--secondary" href="#">Log In</a></li>
+        <li class="c-nav__item">
+          <a class="c-nav__link" href="#">Locations</a>
+        </li>
+        <li class="c-nav__item">
+          <a class="c-nav__link" href="#">Policies</a>
+        </li>
+        <li class="c-nav__item">
+          <a class="c-nav__link" href="#">Contact</a>
+        </li>
+        <li class="c-nav__item">
+          <a class="c-nav__link c-button c-button--secondary" href="#">Log In</a>
+        </li>
       </ul>
     </nav>
   </header>
