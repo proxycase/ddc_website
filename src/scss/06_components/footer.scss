@@ -17,6 +17,10 @@ footer {
   justify-content: center;
   margin-bottom: $spacing-large;
 
+  &:first-child {
+    padding-top: 1rem;
+  }
+
   @media #{$medium-up} {
     flex-wrap: nowrap;
   }

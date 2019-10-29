@@ -19,8 +19,6 @@
 .c-feature__list {
   @extend %clean-list;
   @extend %flex-row-wrap;
-
-  padding-bottom: 20px;
 }
 
 .c-feature__item {
@@ -28,7 +26,7 @@
 
   display: flex;
   flex-direction: column;
-  margin-bottom: 2em;
+  margin-bottom: 3rem;
 
   &--third {
     @extend %full-to-third;
