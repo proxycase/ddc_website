@@ -13,7 +13,6 @@
 
 %full-to-half {
   width: 100%;
-  overflow: hidden;
 
   @media #{$medium-up} {
     margin: 0 auto;
@@ -23,7 +22,6 @@
 
 %full-to-third {
   width: 100%;
-  overflow: hidden;
 
   @media #{$medium-up} {
     margin: 0 auto;
