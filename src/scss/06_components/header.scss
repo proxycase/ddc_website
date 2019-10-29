@@ -50,7 +50,8 @@
 }
 
 // Nav items (ul)
-.c-nav__items {
+.c-nav__items,
+%c-nav__items {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -61,7 +62,7 @@
 
 // Nav items (li)
 .c-nav__item {
-  @extend .c-nav__items;
+  @extend %c-nav__items;
 
   justify-content: center;
   list-style: none;

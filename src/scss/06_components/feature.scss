@@ -6,7 +6,7 @@
 
 // Main page feature sections
 .c-feature {
-  @extend %clean-list;
+  @include clean-list;
 
   padding-bottom: $spacing-xx-large;
 }
@@ -17,19 +17,19 @@
 
 // ul level
 .c-feature__list {
-  @extend %clean-list;
-  @extend %flex-row-wrap;
+  @include clean-list;
+  @include flex-row-wrap;
 }
 
 .c-feature__item {
-  @extend %full-to-half;
+  @include full-to-half;
 
   display: flex;
   flex-direction: column;
   margin-bottom: 3rem;
 
   &--third {
-    @extend %full-to-third;
+    @include full-to-third;
   }
 }
 
@@ -38,7 +38,6 @@
 }
 
 .c-feature__link {
-  @extend .c-button;
   @extend .c-button--primary;
 
   align-self: flex-start;

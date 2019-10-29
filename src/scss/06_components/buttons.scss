@@ -2,7 +2,8 @@
   box-shadow: 0 5px 8px 0 rgba(34, 34, 34, 0.25);
 }
 
-.c-button {
+.c-button,
+%c-button {
   border-radius: 3px;
   border: none;
   box-shadow: $color-double-shadow;
@@ -14,6 +15,8 @@
   white-space: nowrap;
 
   &--primary {
+    @extend %c-button;
+
     color: $color-white;
     background: $color-primary;
 

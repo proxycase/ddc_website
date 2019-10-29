@@ -5,7 +5,7 @@
   }
 }
 
-%full-to-half {
+@mixin full-to-half {
   width: 100%;
 
   @media #{$medium-up} {
@@ -14,7 +14,7 @@
   }
 }
 
-%full-to-third {
+@mixin full-to-third {
   width: 100%;
 
   @media #{$medium-up} {
@@ -23,24 +23,25 @@
   }
 }
 
-%full-to-fourths {
+@mixin full-to-fourths {
   width: 100%;
 
-  @media #{$small-up} {
+  @media #{$medium-up} {
     margin: 0 auto;
+    min-width: none;
     width: 23%;
   }
 }
 
-// Normalizes all lists that extend this
-%clean-list {
+// Normalizes all lists that include this
+@mixin clean-list {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
 // Display as flex row that wraps (used for section ul)
-%flex-row-wrap {
+@mixin flex-row-wrap {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;

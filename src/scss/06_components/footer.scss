@@ -9,7 +9,7 @@ footer {
 }
 
 .c-footer__items {
-  @extend %clean-list;
+  @include clean-list;
 
   display: flex;
   flex-direction: row;
@@ -27,19 +27,14 @@ footer {
 }
 
 .c-footer__item {
-  @extend %clean-list;
-  @extend %full-to-fourths;
+  @include clean-list;
+  @include full-to-fourths;
 
-  width: 100%;
   margin: 0 $spacing-small $spacing-large;
-
-  @media #{$medium-up} {
-    min-width: none;
-  }
 }
 
 .c-footer__links {
-  @extend %clean-list;
+  @include clean-list;
 }
 
 .c-footer__link {
