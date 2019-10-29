@@ -26,7 +26,8 @@
 .c-feature__item {
   @extend %full-to-half;
 
-  display: block;
+  display: flex;
+  flex-direction: column;
   margin-bottom: 2em;
 
   &--third {
@@ -42,6 +43,5 @@
   @extend .c-button;
   @extend .c-button--primary;
 
-  display: inline-block;
-  margin-top: $spacing-small;
+  align-self: flex-start;
 }

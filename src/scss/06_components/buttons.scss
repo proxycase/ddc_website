@@ -6,10 +6,12 @@
   border-radius: 3px;
   border: none;
   box-shadow: $color-double-shadow;
-  padding: $spacing-small $spacing-large;
-  padding-top: $spacing-medium;
+  margin-top: auto;
+  padding: $spacing-medium $spacing-large $spacing-small;
   text-decoration: none;
   transition: all 0.3s ease-out;
+  user-select: none;
+  white-space: nowrap;
 
   &--primary {
     color: $color-white;
