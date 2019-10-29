@@ -2,18 +2,20 @@
   display: grid;
   grid-template-columns: 0.25fr 1fr;
   grid-template-areas: "logo navigation";
-  height: $headerHeight;
+  height: $header-height;
   width: 100%;
 }
 
+// Brand
 .c-brand__container {
   grid-area: logo;
   display: block;
+  height: $header-height;
 }
 
 .c-brand__img {
   display: block;
-  height: 100%;
+  height: $header-height;
 }
 
 .c-booking__header {
@@ -22,6 +24,7 @@
   text-align: center;
 }
 
+// Navigation Mobile
 .c-nav__mobile {
   align-items: center;
   display: flex;
@@ -32,6 +35,7 @@
   }
 }
 
+// Navigation Desktop
 .c-nav__desktop {
   display: none;
   flex-direction: column;
@@ -45,16 +49,17 @@
   }
 }
 
-// Nav Items
+// Nav items (ul)
 .c-nav__items {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+  align-items: center;
   margin: 0;
-  padding: 2em;
   transition: max-height 0.2s ease-out;
 }
 
+// Nav items (li)
 .c-nav__item {
   @extend .c-nav__items;
 

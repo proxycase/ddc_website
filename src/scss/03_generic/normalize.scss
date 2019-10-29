@@ -27,10 +27,6 @@ html {
     left: auto;
     right: auto;
   }
-
-  @media #{$medium-up} {
-    padding: 0;
-  }
 }
 
 *,
