@@ -1,6 +1,7 @@
 // Colors
 
-$color-background: #FFF;
+$color-background: aliceblue;
+$texture-background: linear-gradient(rgba(178, 219, 213, 0.1), rgba(255, 255, 255, 0.027)), url("/assets/dot-grid.jpg");
 
 $color-primary: #FA8D62;
 $color-primary-hover: darken($color-primary, 10%);
