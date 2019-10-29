@@ -1,21 +1,5 @@
-html {
-  @include clearfix;
-
-  max-width: 1200px;
-  padding: 0 20px;
-
-  margin: {
-    left: auto;
-    right: auto;
-  }
-
-  @media #{$medium-up} {
-    padding: 0;
-  }
-}
-
-.o-hero {
-  height: 500px;
+.o-main {
+  height: 80vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
